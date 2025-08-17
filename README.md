@@ -41,8 +41,7 @@
 - **JA:**  
   - インフレ・為替・分布パラメータの一括スイープ  
   - 期間・ステップ数を設定可能なシミュレーション  
-  - 収益分布・ドローダウン・パーセンタイル帯の可視化  
-  - JSON設定で再現性・自動実行に適合
+  - 収益分布の可視化(Histogram etc)  
 
 ---
 
@@ -93,7 +92,7 @@ python xx1_monte_carlo_simulation_inflation_range_fx_adjust_t-dist.py \
     -z wd3_comp_if2-3_wd50man_i1000man_fx_adjust0.10
 
 
-## inflation fix mode, and get histogram snapshot evert year.
+## inflation fix mode, and get histogram snapshot every year.
 python xx1_monte_carlo_simulation_inflation_range_fx_adjust_t-dist.py \
    -i 10_000_000  -p portfolio.json \
    --withdraw_start_years 10 -w 500_000 \
@@ -128,7 +127,7 @@ python xx1_monte_carlo_simulation_inflation_range_fx_adjust_t-dist.py \
         "mean_return": 0.09,
         "std_dev": 0.18
     },
-    "jpy: マネックス資産設計ファンド_育成型": {
+    "jpy: balanced_fund": {
         "weight": 0.3,
         "mean_return": 0.06,
         "std_dev": 0.0914
@@ -152,7 +151,7 @@ python xx1_monte_carlo_simulation_inflation_range_fx_adjust_t-dist.py \
 ##    ただし、inflationは固定。
 ## inflation_min ~ max の間を inflation_sweep_stepで分割して、その値のinflationで固定して最後まで計算.
 ##
-## eg) step 5 ならば,以下のinふlationで計算。
+## eg) step 5 ならば,以下のinflationで計算。
 ##  0.02 0.0225 0.025 0.0275 0.03
 
 ## t分布 : for conte_carlo
@@ -251,11 +250,11 @@ python xx1_monte_carlo_simulation_inflation_range_fx_adjust_t-dist.py \
 
 ## コア・実行制御
 
---simulation, -s      : int（例 10000） モンテカルロ試行数
+--simulation, -s      : int（default 10000） モンテカルロ試行数
 --initial_asset, -i   : float           初期資産（JPY）
 --years, -y           : int             運用年数
 --portfolio, -p       : str             ポートフォリオJSONのパス
---seed                : int or None     乱数シード（再現性）
+--seed                : int, 42(default)  乱数シード（再現性）
 --early_terminate_if_ruined : flag      破綻（資産<=0）でその経路を打ち切り
 ---------------------------------------------------------------
 
@@ -265,6 +264,9 @@ python xx1_monte_carlo_simulation_inflation_range_fx_adjust_t-dist.py \
 --withdraw_start_years  : int     取り崩し開始年（0=初年）
 --save_snapshot_hists   : flag    途中年ヒストグラムを年次出力
 --mode_interval_years   : int     ヒスト/モード抽出間隔（年, 既定=1）
+--inflation_sweep_steps : int     スイープ分割数（等間隔）
+
+ 備考: 取り崩し額は毎年「前年取り崩し×(1+inflation)」で増額。
 --------------------------------------------------------
 
 ## インフレ（inflation）
@@ -272,8 +274,9 @@ python xx1_monte_carlo_simulation_inflation_range_fx_adjust_t-dist.py \
 --inflation_rate        : float   単発実行時の年率インフレ
 --inflation_min/max     : float   スイープの下限/上限（年率）
 --inflation_sweep_steps : int     スイープ分割数（等間隔）
- 考: 取り崩し額は毎年「前年取り崩し×(1+inflation)」で増額。
- ポート上の資産は実質換算（インフレ影響を調整）で比較。
+
+ 備考: 取り崩し額は毎年「前年取り崩し×(1+inflation)」で増額。
+ 資産は実質換算（インフレ影響を調整）。
 ---------------------------
 
 ## 資産リターンの分布（t分布）
@@ -289,7 +292,8 @@ python xx1_monte_carlo_simulation_inflation_range_fx_adjust_t-dist.py \
 --fx_annual_vol         : float   年率ボラ（月次は /√12）
 --fx_drift_annual       : float   年率ドリフト（月次は 12乗根で換算）
 --fx_t_df               : float   月次FXにも t分布を使用（df>2）。未指定は正規
- 考: 外貨判定は資産名に "foreign" または "usd" を含む場合に適用。
+
+ 備考: 外貨判定は資産名にportfolio.json中に "foreign" または "usd" を含む場合に適用。
 -------------------------------------------
 
 ## 結果保存・後処理
@@ -306,7 +310,7 @@ python xx1_monte_carlo_simulation_inflation_range_fx_adjust_t-dist.py \
 
 ## Outputs / 生成物
 
-* **EN:** CSV, txt (summary etc), PNG/PDF charts (histogram).
+* **EN:** CSV, txt (summary etc), PNG (histogram).
 * **JA:** CSV, txt（試行結果の統計）、PNG（ヒストグラム）。
 
 ---
