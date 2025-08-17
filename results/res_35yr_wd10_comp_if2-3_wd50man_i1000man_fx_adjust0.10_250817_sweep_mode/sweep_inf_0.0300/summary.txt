@@ -1,0 +1,8 @@
+               count       mean           std           min           25%           50%           75%           max
+final_asset  10000.0  703.05344  1.389558e+07 -3.059441e+07 -9.294781e+06 -2.615879e+06  5.882687e+06  1.665314e+08
+ruin_probability=0.5893
+ruin_se=0.004920
+ruin_ci_wilson_low=0.5796
+ruin_ci_wilson_high=0.5989
+share_final_negative=0.5893
+mode_approx=-8910574

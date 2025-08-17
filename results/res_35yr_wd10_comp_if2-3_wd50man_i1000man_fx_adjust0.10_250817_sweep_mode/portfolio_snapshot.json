@@ -1,0 +1,22 @@
+{
+  "usd: all_country": {
+    "weight": 0.3,
+    "mean_return": 0.075,
+    "std_dev": 0.15
+  },
+  "usd: S&P500": {
+    "weight": 0.2,
+    "mean_return": 0.09,
+    "std_dev": 0.18
+  },
+  "jpy: マネックス資産設計ファンド_育成型": {
+    "weight": 0.3,
+    "mean_return": 0.06,
+    "std_dev": 0.0914
+  },
+  "jpy: ニッセイJ-REIT A": {
+    "weight": 0.2,
+    "mean_return": 0.0563,
+    "std_dev": 0.1201
+  }
+}
