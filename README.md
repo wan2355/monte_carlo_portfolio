@@ -4,6 +4,8 @@
  **EN:** The author cannot take responsibility for any results produced by using this software. Use at your own risk.  
  **JA:** 本ソフトウェアの利用により生じたいかなる結果についても、作者は一切の責任を負いません。自己責任でご利用ください。
 
+・作者は怠け者ですので、質問等に対する回答はいつできるかわかりません。ご容赦ください。
+
 ---
 
 ## Table of Contents / 目次
