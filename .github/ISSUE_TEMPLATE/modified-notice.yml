@@ -1,0 +1,34 @@
+name: Modified version notice
+description: Notify the licensor of a modified redistribution (per Additional Terms)
+title: "Modified redistribution notice"
+labels: [notice]
+assignees: [wan2355]
+body:
+  - type: input
+    id: fork
+    attributes:
+      label: Fork/Repo URL
+      placeholder: https://github.com/<user>/<repo>
+    validations:
+      required: true
+  - type: input
+    id: commit
+    attributes:
+      label: Commit hash or tag
+      placeholder: e.g. 1a2b3c4 or v0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: changes
+    attributes:
+      label: Summary of changes
+      description: List files changed and a short summary.
+      placeholder: Modified files and what changed.
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact email or profile
+      placeholder: [email protected]
+
