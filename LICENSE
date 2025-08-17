@@ -1,87 +1,83 @@
-The Prosperity Public License 3.0.0
+Noncommercial No-Redistribution License 1.0 (NNRL-1.0)
+LicenseRef-NNRL-1.0
 
 Contributor: yd55
 Source Code: https://github.com/wan2355/monte_carlo_portfolio
+Contact:     mygit@healing.sakura.ne.jp
 
-## Purpose
+0. Summary (non-binding)
+This is a source-available license for personal, noncommercial use only.
+You may install, run, and modify the Software for your own use, but you
+may not redistribute it or make it available to any third parties.
+Commercial use requires a separate paid license from the Contributor.
 
-This license allows you to use and share this software for noncommercial purposes for free and to try this software for commercial purposes for thirty days.
+1) Definitions
+“Software” means the source code and accompanying files in this repository.
+“Noncommercial Use” means use that is not intended for or directed toward
+commercial advantage or monetary compensation, including personal study,
+research, teaching, evaluation, and use by non-profit entities.
+“Redistribute” or “Redistribution” means any act of making the Software
+(or derivative works) available to any third party, by any means, including
+but not limited to copying, transferring, publishing to public or private
+repositories, forking, creating gists, packaging, hosting as a network
+service or SaaS, embedding in products, or otherwise providing access
+beyond your own devices or private accounts you control alone.
 
-## Agreement
+2) Copyright License (Noncommercial, No-Redistribution)
+Subject to this License, the Contributor grants you a worldwide,
+royalty-free, non-exclusive license to reproduce and modify the Software
+solely for your Noncommercial Use on devices or private accounts you own
+or control. You may make a reasonable number of backup copies for that
+purpose. This License does not grant any right to Redistribute.
 
-In order to receive this license, you have to agree to its rules. Those rules are both obligations under that agreement and conditions to your license. Don’t do anything with this software that triggers a rule you can’t or won’t follow.
+3) Patent License (Noncommercial Only)
+Subject to this License, the Contributor grants you a worldwide,
+royalty-free, non-exclusive patent license to make, have made, use, and
+import the Software solely for your Noncommercial Use. No patent license
+is granted for any Redistribution or Commercial Use.
 
-## Notices
+4) Prohibitions
+You must not: (a) Redistribute the Software or any derivative work;
+(b) use the Software for Commercial Use; (c) sublicense; (d) remove or
+obfuscate copyright, license, or attribution notices; (e) use any trade
+name, logo, or trademark of the Contributor.
 
-Make sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.
+5) Notices (for your copies)
+For any copies you make for your own Noncommercial Use, retain this
+License text and any NOTICE file intact in the repository or folder that
+contains the Software.
 
-## Commercial Trial
+6) Optional Written Permission
+If the Contributor gives you prior written permission to Redistribute
+despite Section 4(a), that permission will specify the scope. In that case,
+you must: (i) include this License in full, (ii) keep all notices, and
+(iii) clearly mark modified files as modified and summarize changes in
+README or CHANGELOG. You must also notify the Contributor within 14 days
+via the Contact above or by opening a public issue in the Source Code
+repository. Absent such written permission, Redistribution remains
+prohibited.
 
-Limit your use of this software for commercial purposes to a thirty-day trial period. If you use this software for work, your company gets one trial period for all personnel, not one trial per person.
+7) Warranty Disclaimer
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND.
 
-## Contributions Back
+8) Limitation of Liability
+IN NO EVENT SHALL THE CONTRIBUTOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE,
+ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THIS LICENSE.
 
-Developing feedback, changes, or additions that you contribute back to the contributor on the terms of a standardized public software license such as the Blue Oak Model License 1.0.0, the Apache License 2.0, the MIT license, or the two-clause BSD license doesn’t count as use for a commercial purpose.
+9) Termination and Cure
+This License terminates automatically if you breach it. Your license is
+conditionally reinstated if you cease violation and, within 30 days of
+learning of the violation, take reasonable steps to cure and notify the
+Contributor. Termination does not limit any other rights or remedies.
 
-## Personal Uses
+10) Severability; Entire Agreement
+If any provision is unenforceable, the remainder remains in effect. This
+License is the entire agreement for the licensed rights and supersedes
+prior terms.
 
-Personal use for research, experiment, and testing for the benefit of public knowledge, personal study, private entertainment, hobby projects, amateur pursuits, or religious observance, without any anticipated commercial application, doesn’t count as use for a commercial purpose.
-
-## Noncommercial Organizations
-
-Use by any charitable organization, educational institution, public research organization, public safety or health organization, environmental protection organization, or government institution doesn’t count as use for a commercial purpose regardless of the source of funding or obligations resulting from the funding.
-
-## Defense
-
-Don’t make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.
-
-## Copyright
-
-The contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.
-
-## Patent
-
-The contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.
-
-## Reliability
-
-The contributor can’t revoke this license.
-
-## Excuse
-
-You’re excused for unknowingly breaking Notices if you take all practical steps to comply within thirty days of learning you broke the rule.
-
-## No Liability
-
-As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won’t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.
-
--------------------------------------------------------------------------------
-ADDITIONAL TERMS (Supplement to the Prosperity Public License 3.0.0)
-
-1) Modification Marking
-If you publicly redistribute a modified version, you must add the following
-header at the top of each modified file and summarize the changes in README
-(or CHANGELOG):
-"Modified from <Project>@<version> on <YYYY-MM-DD> by <Name>."
-
-2) Notification
-If you publicly redistribute a modified version, you must notify the Licensor
-within 14 days by either method below:
-- Email: mygit@healing.sakura.ne.jp
-- Contact page / Issues: https://github.com/wan2355/monte_carlo_portfolio/issues
-
-3) Scope
-These Additional Terms supplement the PPL3 and do not grant any permission
-beyond it.
-
--- 日本語参考（非公式） --
-1) 変更点の明示：改変版を公開配布する場合、改変した各ファイルの先頭に
-   「Modified from <Project>@<version> on <YYYY-MM-DD> by <Name>.」を記載し、
-   README または CHANGELOG に要約を記します。
-2) 改変の報告：改変版を公開配布する場合、14 日以内に上記いずれかの方法で
-   ライセンサーへ通知します。
-3) 範囲：本追加条項は PPL3 を補足するもので、許諾範囲を拡張しません.
-
--------------------------------------------------------------------------------
-Prosperity is a project of License Zero, with help from many friends.
+-- Non-binding Japanese guide（参考・法的効力なし） --
+本ライセンスは「個人・非商用での使用と改変のみ」を許可し、第三者への
+配布・公開（再配布）を一切禁止します。商用利用は別途有償許諾が必要です。
+（書面許可がある場合のみ、変更点の明示・通知義務が生じます。保証はありません。）
 
