@@ -1,0 +1,22 @@
+{
+    "usd: Orukan": {
+        "weight": 0.3,
+        "mean_return": 0.075,
+        "std_dev": 0.15
+    },
+    "usd: S&P500": {
+        "weight": 0.2,
+        "mean_return": 0.09,
+        "std_dev": 0.18
+    },
+    "jp: Balanced fund": {
+        "weight": 0.3,
+        "mean_return": 0.045,
+        "std_dev": 0.08
+    },
+    "jp: DomesticBonds": {
+        "weight": 0.2,
+        "mean_return": 0.01,
+        "std_dev": 0.03
+    }
+}
