@@ -1,5 +1,5 @@
 {
-    "usd: Orukan": {
+    "usd: all_country": {
         "weight": 0.3,
         "mean_return": 0.075,
         "std_dev": 0.15
@@ -9,14 +9,14 @@
         "mean_return": 0.09,
         "std_dev": 0.18
     },
-    "jp: Balanced fund": {
+    "jpy: balnce_fund": {
         "weight": 0.3,
-        "mean_return": 0.045,
-        "std_dev": 0.08
+        "mean_return": 0.06,
+        "std_dev": 0.0914
     },
-    "jp: DomesticBonds": {
+    "jpy: ニッセイJ-REIT A": {
         "weight": 0.2,
-        "mean_return": 0.01,
-        "std_dev": 0.03
+        "mean_return": 0.0563,
+        "std_dev": 0.1201
     }
 }
